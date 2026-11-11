@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232332;
+    color: aliceblue;
+    font-family:Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 400px;
+    padding: 2rem;
+    margin-left: 40rem;
+    margin-top: 18rem;
+}
+.logo h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 17.5rem;
+}
+
+.info button {
+    color: rgb(55, 55, 248);
+}
+
+input {
+    background-color: #23233255;
+    border: 1px solid #858a92c0;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    color: aliceblue;
+    width: 280px;
+}
+
+#start-btn {
+    background-color: #363c51;
+    border: none;
+    color: aliceblue;
+    padding: 0.6rem;
+    border-radius: .2rem;
+
+}
+
+.leaderboard,.instruction {
+    background-color: transparent;
+    border: none;
+}
