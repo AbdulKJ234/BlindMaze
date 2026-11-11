@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="home">
+    <div id="home" class="home">
         <div class="logo">
 
             <h1>BlindMaze</h1>
         </div>
         <div class="input">
-            <div class="input-wrapper">
+            <form  class="input-content">
                 <input required type="text" placeholder="Your name" id="userName">
-                <button id="start-btn">Start</button>
-            </div>
+                <button  id="start-btn">Start</button>
+            </form>
         </div>
         <div class="info">
-            <button class="leaderboard">Leaderboard</button>
-            <button class="instruction">Show instructions</button>
+            <button type="button" id="btnLdr" class="leaderboard-btn">Leaderboard</button>
+            <button type="submit" id="btnIns" class="instruction-btn" onclick="showIns()">Show instructions</button>
+        </div>
+    </div>
+
+    <div id="instruksi" class="instruction">
+        <div class="instruction-header">
+            <h2>Instruction</h2>
+            <button onclick="closeIns()" class="close-btn">X</button>
+        </div>
+        <div class="instruction-content">
+            <p>1.Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>3.Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>4.Lorem ipsum dolor sit amet consectetur.</p>
+            <p>5.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, optio?</p>
         </div>
     </div>
 

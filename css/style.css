@@ -8,7 +8,7 @@ body {
     background-color: #232332;
     color: aliceblue;
     font-family:Helvetica, sans-serif;
-    height: 100vh;
+    height: 70vh;
 }
 
 .home {
@@ -27,7 +27,7 @@ body {
     font-size: 3rem;
 }
 
-.input-wrapper {
+.input-content {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -41,6 +41,10 @@ body {
 
 .info button {
     color: rgb(55, 55, 248);
+
+    &:hover {
+        color: rgb(27, 27, 100);
+    }
 }
 
 input {
@@ -61,7 +65,56 @@ input {
 
 }
 
-.leaderboard,.instruction {
+.leaderboard-btn,.instruction-btn {
     background-color: transparent;
     border: none;
+}
+
+.instruction {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    background-color: #3d425a;
+    border: 1px solid rgba(135, 134, 134, 0.437);
+    border-radius: 0.3rem;
+    gap: 1rem;
+    width: 500px;
+    padding: 1.5rem;
+    top: 40%;
+    left: 35%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.instruction-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-btn {
+    position: fixed;
+    background-color: #262c3d;
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    width: 2rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    top: 41%;
+    right: 37.8%;
+
+    &:hover {
+        color: #0c0d0f;
+        background-color: rgb(220, 90, 116);
+        transition: .2s all ease-in-out;
+    }
+}
+
+.instruction-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
